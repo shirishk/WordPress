@@ -1,5 +1,5 @@
 FROM ubuntu:16.04
-MAINTAINER Ashutosh Kumar akumar@purestorage.com
+MAINTAINER Shirish
 RUN sed -i~orig -e 's/# deb-src/deb-src/' /etc/apt/sources.list
 RUN apt-get update && \
     apt-get install ruby-dev libxml2-dev libxslt-dev pkg-config make clang wget virtualbox rsync ssh -y --no-install-recommends && \
